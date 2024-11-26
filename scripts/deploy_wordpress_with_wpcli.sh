@@ -91,3 +91,6 @@ mensaje_error "No se pudo reiniciar Apache."
 
 # Mensaje final
 echo "¡WordPress instalado correctamente! Acceda a su sitio en http://$WP_URL"
+
+# Fichero de control
+touch /var/log/wp_installed.flag
