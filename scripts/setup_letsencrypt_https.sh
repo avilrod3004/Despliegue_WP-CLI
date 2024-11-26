@@ -6,6 +6,7 @@ if [ ! -f /var/log/lamp_installed.flag ]; then
     exit 1
 fi
 
+# Verificar que se ha ejecutado primero el script para instalar y configurar WordPress
 if [ ! -f /var/log/wp_installed.flag ]; then
     echo "ERROR: Wordpress no está instalado. Ejecute primero el script "deploy_wordpress_with_wpcli.sh"." >&2
     exit 1
