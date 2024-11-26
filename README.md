@@ -1,5 +1,5 @@
 # Despliegue_LAMP
-Scripts para instalar LAMP y herraminetas adicionales: phpMyAdmin, Adminer y GoAccess
+Scripts para instalar LAMP, WordPress y solicitar un certificado SSL/TLS
 
 ## Requisitos para ejecutar los scripts
 - Máquina con Ubuntu server 24.04
@@ -8,4 +8,6 @@ Scripts para instalar LAMP y herraminetas adicionales: phpMyAdmin, Adminer y GoA
 ## Pasos
 1. Dar permisos de ejecución a los scripts: `chmod +x script.sh`
 2. Ejecutar los scripts como `root`
-2. Ejecutar primero `install_lamp.sh`
+3. Ejecutar primero `install_lamp.sh`
+4. Después, ejecutar `deploy_wordpress_with_wpcli.sh`
+5. Por último, ejecutar `setup_letsencrypt_https.sh`
