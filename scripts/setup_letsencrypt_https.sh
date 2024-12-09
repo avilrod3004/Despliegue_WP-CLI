@@ -80,10 +80,6 @@ fi
 sudo systemctl restart apache2
 mensaje_error "No se pudo reiniciar Apache después de la configuración del certificado SSL/TLS."
 
-# Configurar renovación automática del certificado
-sudo systemctl enable certbot.timer
-mensaje_error "No se pudo habilitar la renovación automática del certificado SSL/TLS."
-
 # Mensaje final
 echo "¡Certificado SSL/TLS configurado correctamente para $WP_URL!"
 echo "Acceda a su sitio web de forma segura en https://$WP_URL"
